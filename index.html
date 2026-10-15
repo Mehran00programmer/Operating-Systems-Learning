@@ -1,49 +1,253 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>آموزش سیستم‌های عامل</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="icon" href="mehran-favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0d1117">
+<meta name="description" content="آموزش سیستم‌های عامل — مجموعه آموزشی درباره مفاهیم پایه، مدیریت فرآیند، حافظه مجازی، همزمانی، بن‌بست و معماری سیستم‌عامل. نوشته مهران غلامی مقدم.">
+<meta name="author" content="مهران غلامی مقدم">
+<meta name="keywords" content="سیستم عامل, Operating Systems, مدیریت فرآیند, حافظه مجازی, بن‌بست, همزمانی">
+<meta property="og:title" content="آموزش سیستم‌های عامل">
+<meta property="og:description" content="مجموعه آموزشی درباره مفاهیم پایه سیستم‌عامل، مدیریت فرآیند، حافظه و همزمانی">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fa_IR">
+<meta property="og:url" content="https://mehran00programmer.github.io/Operating-Systems-Learning/">
+<title>آموزش سیستم‌های عامل — فهرست مطالب</title>
+<link rel="icon" href="mehran-favicon.ico" sizes="any">
+<link rel="canonical" href="https://mehran00programmer.github.io/Operating-Systems-Learning/">
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <header>
-        <h1>📚 آموزش سیستم‌های عامل</h1>
-        <p>Operating Systems Course</p>
-    </header>
 
-    <main>
-        <section class="intro">
-            <h2>خوش آمدید</h2>
-            <p>
-                این مجموعه شامل جزوه‌ها و یادداشت‌های درس سیستم‌های عامل است.
-                مطالب به‌صورت فصل‌به‌فصل سازمان‌دهی شده‌اند و بر اساس کتاب
-                <strong>Operating System Concepts</strong>
-                نوشته Silberschatz, Galvin و Gagne تهیه شده‌اند.
-            </p>
-        </section>
+<header class="hero">
+  <div class="page">
+    <div class="hero-badge">Operating Systems Learning</div>
+    <h1 class="hero-title">آموزش سیستم‌های عامل</h1>
+    <p class="hero-desc">
+      مجموعه‌ای ساختارمند و فارسی درباره مفاهیم پایه سیستم‌عامل، مدیریت فرآیند،
+      حافظه مجازی، همزمانی، بن‌بست و معماری سیستم‌عامل.
+    </p>
+    <div class="hero-author">
+      <span class="hero-author-name">مهران غلامی مقدم</span>
+      <a class="hero-author-link" href="https://github.com/Mehran00programmer" target="_blank" rel="noopener noreferrer">@Mehran00programmer</a>
+    </div>
+  </div>
+</header>
 
-        <section class="chapters">
-            <h2>فصل‌ها</h2>
-            <ul>
-                <li>
-                    <a href="part-01.html">
-                        <span class="chapter-num">فصل ۱</span>
-                        <span class="chapter-title">مقدمه (Introduction)</span>
-                    </a>
-                </li>
-                <!-- فصل‌های بعدی در ادامه اضافه خواهند شد -->
-            </ul>
-        </section>
+<div class="page">
 
-        <section class="note">
-            <p>📌 فصل‌های بعدی به‌زودی اضافه می‌شوند.</p>
-        </section>
-    </main>
+  <section class="about-section fade-in">
+    <h2 class="about-section-title">درباره این جزوه</h2>
+    <p>
+      این جزوه حاصل تلاش برای ساخت یک مرجع فارسی، منظم و کاربردی درباره <strong>سیستم‌های عامل</strong> است.
+      هدف اصلی این است که مسیر یادگیری از مفاهیم پایه تا مباحث پیشرفته‌ای مانند همزمانی، بن‌بست و
+      حافظه مجازی، به‌صورت گام‌به‌گام و ساختارمند پوشش داده شود.
+    </p>
+    <p>
+      این مجموعه برای دانشجویان مهندسی کامپیوتر و علاقه‌مندانی طراحی شده که می‌خواهند سیستم‌عامل را
+      از پایه یاد بگیرند، بدون اینکه در انبوهی از منابع پراکنده سردرگم شوند. هر قسمت روی یک موضوع
+      مشخص تمرکز دارد و پیش‌نیاز قسمت‌های بعدی را فراهم می‌کند.
+    </p>
+    <div class="about-features">
+      <div class="about-feature">
+        <svg class="about-feature-check" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 8 7 12 13 4"/></svg>
+        <span>ساختار گام‌به‌گام و منظم</span>
+      </div>
+      <div class="about-feature">
+        <svg class="about-feature-check" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 8 7 12 13 4"/></svg>
+        <span>نمودارها و توضیحات تصویری</span>
+      </div>
+      <div class="about-feature">
+        <svg class="about-feature-check" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 8 7 12 13 4"/></svg>
+        <span>مثال‌های عملی از سیستم‌عامل‌های واقعی</span>
+      </div>
+      <div class="about-feature">
+        <svg class="about-feature-check" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 8 7 12 13 4"/></svg>
+        <span>تمرین‌های پایان هر قسمت</span>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>© 2026 مهران غلامی مقدم — تمامی حقوق محفوظ است.</p>
-    </footer>
+  <div class="meta-row fade-in" style="grid-template-columns: 1fr;">
+    <div class="meta-box">
+      <span class="meta-box-label">Progress</span>
+      <span class="meta-box-value">۱ از ۱۳ فصل آماده</span>
+      <div class="overall-progress-track">
+        <div class="overall-progress-fill" style="width: 7.7%;"></div>
+      </div>
+      <div class="overall-progress-text">
+        <span>7.7%</span>
+        <span>13 chapters</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="search-wrap fade-in">
+    <svg class="search-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="7" cy="7" r="5"/>
+      <path d="M11 11l3.5 3.5"/>
+    </svg>
+    <input type="text" class="search-input" placeholder="جستجو در عنوان فصل‌ها..." aria-label="جستجو در فصل‌ها">
+  </div>
+
+  <section class="parts-list">
+    <div class="parts-list-header">
+      <h2 class="parts-list-title">فهرست فصل‌ها</h2>
+      <span class="parts-list-count">۱۳ فصل</span>
+    </div>
+
+    <div class="parts-grid">
+
+      <a class="part-card ready fade-in" href="part-01.html">
+        <div class="part-card-num">01</div>
+        <div class="part-card-body">
+          <div class="part-card-title">مقدمه (Introduction)</div>
+          <div class="part-card-desc">مفاهیم پایه، وقفه‌ها، سلسله‌مراتب حافظه، معماری سیستم</div>
+        </div>
+        <div class="part-card-status">آماده</div>
+      </a>
+
+      <div class="part-card locked fade-in">
+        <div class="part-card-num">02</div>
+        <div class="part-card-body">
+          <div class="part-card-title">ساختارهای سیستم‌عامل</div>
+          <div class="part-card-desc">در حال آماده‌سازی</div>
+        </div>
+        <div class="part-card-status">در راه</div>
+      </div>
+
+      <div class="part-card locked fade-in">
+        <div class="part-card-num">03</div>
+        <div class="part-card-body">
+          <div class="part-card-title">فرآیندها (Processes)</div>
+          <div class="part-card-desc">در حال آماده‌سازی</div>
+        </div>
+        <div class="part-card-status">در راه</div>
+      </div>
+
+      <div class="part-card locked fade-in">
+        <div class="part-card-num">04</div>
+        <div class="part-card-body">
+          <div class="part-card-title">نخ‌ها و همزمانی (Threads &amp; Concurrency)</div>
+          <div class="part-card-desc">در حال آماده‌سازی</div>
+        </div>
+        <div class="part-card-status">در راه</div>
+      </div>
+
+      <div class="part-card locked fade-in">
+        <div class="part-card-num">05</div>
+        <div class="part-card-body">
+          <div class="part-card-title">زمان‌بندی CPU (CPU Scheduling)</div>
+          <div class="part-card-desc">در حال آماده‌سازی</div>
+        </div>
+        <div class="part-card-status">در راه</div>
+      </div>
+
+      <div class="part-card locked fade-in">
+        <div class="part-card-num">06</div>
+        <div class="part-card-body">
+          <div class="part-card-title">همگام‌سازی فرآیندها (Synchronization)</div>
+          <div class="part-card-desc">در حال آماده‌سازی</div>
+        </div>
+        <div class="part-card-status">در راه</div>
+      </div>
+
+      <div class="part-card locked fade-in">
+        <div class="part-card-num">07</div>
+        <div class="part-card-body">
+          <div class="part-card-title">بن‌بست (Deadlocks)</div>
+          <div class="part-card-desc">در حال آماده‌سازی</div>
+        </div>
+        <div class="part-card-status">در راه</div>
+      </div>
+
+      <div class="part-card locked fade-in">
+        <div class="part-card-num">08</div>
+        <div class="part-card-body">
+          <div class="part-card-title">مدیریت حافظه (Memory Management)</div>
+          <div class="part-card-desc">در حال آماده‌سازی</div>
+        </div>
+        <div class="part-card-status">در راه</div>
+      </div>
+
+      <div class="part-card locked fade-in">
+        <div class="part-card-num">09</div>
+        <div class="part-card-body">
+          <div class="part-card-title">حافظه مجازی (Virtual Memory)</div>
+          <div class="part-card-desc">در حال آماده‌سازی</div>
+        </div>
+        <div class="part-card-status">در راه</div>
+      </div>
+
+      <div class="part-card locked fade-in">
+        <div class="part-card-num">10</div>
+        <div class="part-card-body">
+          <div class="part-card-title">سیستم فایل (File System)</div>
+          <div class="part-card-desc">در حال آماده‌سازی</div>
+        </div>
+        <div class="part-card-status">در راه</div>
+      </div>
+
+      <div class="part-card locked fade-in">
+        <div class="part-card-num">11</div>
+        <div class="part-card-body">
+          <div class="part-card-title">مدیریت I/O</div>
+          <div class="part-card-desc">در حال آماده‌سازی</div>
+        </div>
+        <div class="part-card-status">در راه</div>
+      </div>
+
+      <div class="part-card locked fade-in">
+        <div class="part-card-num">12</div>
+        <div class="part-card-body">
+          <div class="part-card-title">حفاظت و امنیت (Protection &amp; Security)</div>
+          <div class="part-card-desc">در حال آماده‌سازی</div>
+        </div>
+        <div class="part-card-status">در راه</div>
+      </div>
+
+      <div class="part-card locked fade-in">
+        <div class="part-card-num">13</div>
+        <div class="part-card-body">
+          <div class="part-card-title">سیستم‌های توزیع‌شده و مجازی‌سازی</div>
+          <div class="part-card-desc">در حال آماده‌سازی</div>
+        </div>
+        <div class="part-card-status">در راه</div>
+      </div>
+
+    </div>
+
+    <div class="search-empty">
+      هیچ فصلی با این عنوان پیدا نشد.
+    </div>
+  </section>
+</div>
+
+<footer class="doc-footer">
+  <div class="footer-name">مهران غلامی مقدم</div>
+  <div>
+    <a class="footer-link" href="https://github.com/Mehran00programmer" target="_blank" rel="noopener noreferrer">github.com/Mehran00programmer</a>
+  </div>
+</footer>
+
+<button class="back-to-top" type="button" aria-label="بازگشت به بالا">
+  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 13V3"/>
+    <polyline points="3 8 8 3 13 8"/>
+  </svg>
+</button>
+
+<button class="theme-toggle" type="button" aria-label="تغییر تم">
+  <svg class="icon-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14 9.5A6 6 0 0 1 6.5 2 6 6 0 1 0 14 9.5z"/>
+  </svg>
+  <svg class="icon-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="8" cy="8" r="3"/>
+    <path d="M8 1v2M8 13v2M1 8h2M13 8h2M3 3l1.5 1.5M11.5 11.5L13 13M13 3l-1.5 1.5M4.5 11.5L3 13"/>
+  </svg>
+</button>
+
+<script src="assets/app.js"></script>
+
 </body>
 </html>
